@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    background: white url('../imgs/background.png') repeat-y;
+}
+
+h2, p, h3, h1 {
+    font-family: 'Gotham Pro', sans-serif;
+}
+
+.header-container {
+    width: 1200px;
+    padding: 0;
+    margin: auto;
+    background: linear-gradient(90deg, #FEE5D0 5.2%, rgba(255, 255, 255, 0) 100%), url('../imgs/container1.png') no-repeat center;
+    background-size: cover;
+}
+
+.primary-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-white {
+    color: white;
+}
+
+/* programs */
+.programs {
+    width: 89%;
+    margin: auto;
+    height: 709px;
+}
+
+/* feedback-middle */
+.feedback-middle {
+    width: 89%;
+    margin: auto;
+    height: 265px;
+    background: linear-gradient(90deg, #5C9506 0%, rgba(255, 247, 220, 0) 101.71%), url('../imgs/feedback-middle.png') no-repeat center;
+    background-size: cover;
+    padding: 47px 70px;
+    display: flex;
+    justify-content: space-around;
+}
+/* teachers */
+
+/* groups */
+
+/* video */
+.video {
+    width: 89%;
+    margin: auto;
+    height: 400px;
+    background:  linear-gradient(90deg, #5C9506 0%, rgba(255, 247, 220, 0) 101.71%), url('../imgs/video-cover.png') no-repeat center;
+    background-size: cover;
+    padding: 47px 70px;
+    display: flex;
+}
+
+.video-container {
+    flex: 4; 
+    border: 2px solid #5C9506;
+    border-radius: 9px; 
+    background: #DFDFDF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* gallery */
+
+/* news */
+.news {
+    width: 89%;
+    margin: auto;
+}
+
+/* feedback */
+.feedback {
+    width: 89%;
+    margin: auto;
+    height: 800px;
+    padding: 60px 70px;
+}
+
+.feedback-item {
+    height: 170px;
+    border: 2px solid #5C9506;
+    border-radius: 9px;
+    margin-bottom: 27px;
+    display: flex;
+}
+
+.image-wrapper {
+    flex: 1.5;
+}
+
+.feedback-content {
+    flex: 8;
+    padding: 30px 70px 30px 0;
+}
+
+.feedback-title {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.feedback-text {
+    font-size: 14px;
+}
+
+.circle-image {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    border-radius: 50%;
+    width: 104px;
+    height: 104px;
+}
+
+/* footer styles */
+footer {
+    width: 89%; 
+    margin: auto;
+    height: 324px;
+    display: flex;
+    flex-direction: row;
+}
+
+#map {
+    width: 25%;
+    height: 100%;
+}
+
+.contacts {
+    width: 35%;
+    padding: 55px 47px;
+}
+
+.tour-form {
+    width: 40%;
+    background: #5C9506;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 13px;
+}
+
+.footer-input {
+    width: 47%; 
+    height: 40px; 
+    border-radius: 18px; 
+    border: 2px solid red;
+    text-align: center;
+}
+
+.footer-form-button {
+    width: 100%;
+    height: 43px;
+    border-radius: 27px;
+    border: none;
+    background: #FF3E33;
+    color: #F2F2F2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
