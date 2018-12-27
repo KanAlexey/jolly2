@@ -3,7 +3,6 @@
 }
 
 body {
-    height: 1200px;
     width: 100%;
     box-sizing: border-box;
     background: white url('../imgs/background.png') repeat-y;
@@ -64,9 +63,9 @@ h2, p, h3, h1 {
 }
 
 .video-container {
-    flex: 4; 
+    flex: 4;
     border: 2px solid #5C9506;
-    border-radius: 9px; 
+    border-radius: 9px;
     background: #DFDFDF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -128,8 +127,6 @@ h2, p, h3, h1 {
 
 /* footer styles */
 footer {
-    width: 89%; 
-    margin: auto;
     height: 324px;
     display: flex;
     flex-direction: row;
@@ -156,15 +153,15 @@ footer {
 }
 
 .form-row-container {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 13px;
 }
 
 .footer-input {
-    width: 47%; 
-    height: 40px; 
-    border-radius: 18px; 
+    width: 47%;
+    height: 40px;
+    border-radius: 18px;
     border: 2px solid red;
     text-align: center;
 }
