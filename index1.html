@@ -1,42 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/fonts/fonts.css">
+    <!--<link rel="stylesheet" href="css/uikit.min.css">-->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jolly International Preschool - детский сад в Бишкеке</title>
 </head>
 <body>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                        <div>dasdasd</div>
-                    <!-- <img class="d-block w-100" src="https://via.placeholder.com/700x400" alt="First slide"> -->
-                  </div>
-                  <div class="carousel-item">
-                      <div>dasdasd</div>
-                    <!-- <img class="d-block w-100" src="https://via.placeholder.com/700x400" alt="Second slide"> -->
-                  </div>
-                  <div class="carousel-item">
-                    <div>
-                        dsadasdasdas
-                        <img class="d-block w-100" src="https://via.placeholder.com/700x400" alt="Third slide">
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+    <nav class="uk-navbar uk-container jip-header">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle burger-toggle" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+            <div class="uk-visible@l burger-title-wrapper">
+                <p class="uk-margin-remove burger-title">Детский сад <br> не имеющий аналогов в Кыргызстане</p>
+            </div>
+        </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="#">
+                <img src="imgs/logo.png" class="left-logo" alt="">
+                <img src="imgs/unnamed1.png" class="right-logo"/>
+            </a>
+        </div>
+
+        <div class="uk-navbar-right">
+            <div class="uk-visible@l nav-contacts uk-flex uk-flex-column uk-flex-bottom">
+                <a href="tel:+996312986285" class="uk-margin-remove uk-link-reset telephone"><i class="fas fa-phone-square"></i> +996 312 98 62 85</a>
+                <a href="mailto:" class="uk-margin-remove uk-link-reset telephone"><i class="far fa-envelope"></i> 123mail@gmail.com</a>
+            </div>
+            <button class="uk-button nav-button" type="button">
+                Заказать звонок
+            </button>
+            <div class="uk-flex uk-flex-column uk-margin-small-left uk-visible@m">
+                <a class="uk-remove-margin"><img src="imgs/united-kingdom.png" alt="EN"></a>
+                <a class="uk-remove-margin"><img src="imgs/russia.png" alt="RU"></a>
+            </div>
+        </div>
+
+    </nav>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; animation: uk-animation-slide-top">
+        <nav class="uk-container second-nav" uk-navbar>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-nav nav-link"><a href="#about" uk-scroll="offset: 80">О Нас</a></li>
+                    <li class="uk-nav nav-link"><a href="#section" uk-scroll="offset: 80">Секции</a></li>
+                    <li class="uk-nav nav-link"><a href="#study-programs" uk-scroll="offset: 80">Образовательная программа</a></li>
+                    <li class="uk-nav nav-link"><a href="#teachers" uk-scroll="offset: 80">Преподаватели</a></li>
+                    <li class="uk-nav nav-link"><a href="#groups" uk-scroll="offset: 80">Группы</a></li>
+                    <li class="uk-nav nav-link"><a href="#gallery" uk-scroll="offset: 80">Галерея</a></li>
+                    <li class="uk-nav nav-link"><a href="#news" uk-scroll="offset: 80">Новости</a></li>
+                    <li class="uk-nav nav-link"><a href="#feedback" uk-scroll="offset: 80">Отзывы</a></li>
+                    <li class="uk-nav nav-link"><a href="#contacts" uk-scroll="offset: 80">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="my-id" uk-offcanvas="mode: slide;">
+        <div class="uk-offcanvas-bar uk-background-muted">
+
+            <button class="uk-offcanvas-close close-btn" type="button" uk-close></button>
+
+            <ul class="uk-nav">
+                <li class="offcanvas-link"><a href="#about" uk-scroll="offset: 80">О Нас</a></li>
+                <li class="offcanvas-link"><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-container header-container">
+        <div class="uk-flex uk-flex-between jip-header-container">
+            <div>
+                <h1 class="uk-heading-primary jip-heading-primary">Детский сад "Jolly"</h1>
+                <div>
+                    <ul class="no-bullets">
+                        <li class="circle-list">Франшиза Международной образовательной программы IPC</li>
+                        <li class="circle-list">Ежедневные занятия в соляной пещере</li>
+                        <li class="circle-list">Сертифицированные педагоги из Англии, Южной Кореи и Индии</li>
+                        <li class="circle-list">5 Бонусных услуг в подарок: ментальная арифметика, профилактический массаж, КУФ, УВЧ,
+                            кислородные коктейли
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-container uk-visible@m">
+                <form class="jip-form uk-flex uk-flex-column">
+                    <div>
+                        <input class="uk-width-1-1 uk-padding-small jip-input" placeholder="Введите имя" type="text" />
+                    </div>
+                    <div class="uk-margin-small-top">
+                        <input class="uk-width-1-1 uk-padding-small jip-input" placeholder="Введите номер"
+                               type="text">
+                    </div>
+                    <div class="uk-margin-small-top">
+                        <button class="uk-button jip-button">
+                            Записаться на экскурсию
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="about" class="uk-container uk-background-default jip-about">
+        <div class="about-wrapper">
+            <h2 class="uk-text-center jip-heading-secondary">О нас</h2>
+            <div class="uk-margin-large-bottom">
+                <p class="jip-paragraph">Jolly International Preschool - Общая площадь нашего учреждения - 1200м2, а общая вместимость сада
+                    составляет
+                    94 ребенка. Отметим, что группы сформированы до 12 человек, а на каждую группу приходится по 2-3
+                    сотрудника:
+                    воспитатель и асисстенты.
+                    Уникальность нашего детского сада заключается так же в том, что мы стали единственным дошкольным
+                    учреждением
+                    в Кыргызстане, включенным в Международную Образовательную программу IPC, одобренную Национальной
+                    Ассоциацией
+                    США по дошкольному образованию и другими международными аккредитационными агентствами.</p>
+            </div>
+
+
+            <div class="uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+                <div class="uk-flex">
+                    <img class="about-icon" src="imgs/icons/earth.png" alt="">
+                    <div class="m-l-30">
+                        <p class="about-icon-title">Билингвальная
+                            среда</p>
+                        <p class="about-icon-text">Обучение по
+                            международной программе IPC на английском и русском языках</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <img class="about-icon" src="imgs/icons/stopwatch.png" alt="">
+                    <div class="m-l-30">
+                        <p class="about-icon-title">Развоз</p>
+                        <p class="about-icon-text">В утреннее и
+                            вечернее
+                            время к 8.00 и после 18.00</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <img class="about-icon" src="imgs/icons/calendar.png" alt="">
+                    <div class="m-l-30">
+                        <p class="about-icon-title">Ежемесячные
+                            тренинги</p>
+                        <p class="about-icon-text">С психологом для
+                            родителей. По повышению квалификации сотрудникам</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <img class="about-icon" src="imgs/icons/like.png" alt="">
+                    <div class="m-l-30">
+                        <p class="about-icon-title">Здоровье</p>
+                        <p class="about-icon-text">Штатный врач-педиатр
+                            и
+                            логопед, ежедневный медосмотр</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <img class="about-icon" src="imgs/icons/Group.png" alt="">
+                    <div class="m-l-30">
+                        <p class="about-icon-title">Сбалансированное
+                            питание</p>
+                        <p class="about-icon-text">5ти разовое питание
+                            с
+                            учетом всех рекомендаций НИИ Питания, г.Москва. Нормы, установленные постановлением
+                            правительства
+                            КР</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <img class="about-icon" src="imgs/icons/users.png" alt="">
+                    <div class="m-l-30">
+                        <p class="about-icon-title">Кружки и секции</p>
+                        <p class="about-icon-text">Боевое айкидо,
+                            художественная гимнастика, Fly- йога, English Drama Class, Шахматный клуб, Бассейн</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section" class="uk-container jip-section">
+        <h2 class="uk-text-center jip-heading-secondary">Секции</h2>
+        <div class="uk-margin-auto" style="width: 94%" uk-slider>
+            <div class="uk-position-relative">
+                <div class="uk-slider-container">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
+                        <li>
+                            <div style="height: 350px; background: #5C9506; width: 100%; border-radius: 10px">
+                                <p style="color: white; font-size: 14px; padding: 23px; line-height: 21px; fonts">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя
+                                    в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел,
+                                    стоило ему приподнять голову, свой коричневый, выпуклый, разделенный оторого еле
+                                    держалось готовое </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="height: 350px; background: #5C9506; width: 100%;"></div>
+
+                        </li>
+                        <li>
+                            <div style="height: 350px; background: #5C9506; width: 100%;"></div>
+
+                        </li>
+                        <li>
+                            <div style="height: 350px; background: #5C9506; width: 100%;"></div>
+
+                        </li>
+                        <li>
+                            <div style="height: 300px;"></div>
+                        </li>
+                        <li>
+                            <div style="height: 300px;"></div>
+                        </li>
+                        <li>
+                            <div style="height: 300px;"></div>
+                        </li>
+                        <li>
+                            <div style="height: 300px;"></div>
+                        </li>
+                        <li>
+                            <div style="height: 300px;"></div>
+                        </li>
+                        <li>
+                            <div style="height: 300px;"></div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                   uk-slider-item="next"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<script src="js/uikit.min.js"></script>-->
+    <!--<script src="js/uikit-icons.min.js"></script>-->
+
 </body>
 </html>

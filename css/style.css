@@ -8,7 +8,7 @@ body {
     background: white url('../imgs/background.png') repeat-y;
 }
 
-h2, p, h3, h1 {
+html {
     font-family: 'Gotham Pro', sans-serif;
 }
 /* header */
@@ -18,26 +18,199 @@ h2, p, h3, h1 {
     background: white;
 }
 
+.burger-toggle {
+    color: #5C9506;
+    padding: 0 22px 0 70px;
+}
+
+.burger-title-wrapper {
+    max-width: 300px;
+    margin: auto 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.burger-title {
+    min-width: 270px;
+}
+
+.left-logo {
+    position: relative;
+    top: 13px;
+    left: 3%;
+}
+
+.right-logo {
+    position: relative;
+    top: 13px;
+    right: 3%;
+}
+
+.nav-contacts {
+    color: #FF3E33;
+    margin-right: 11px;
+}
+
+.telephone {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.nav-button {
+    height: 43px;
+    border-radius: 27px;
+    color: white;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    background: #FF3E33;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover, .jip-button:hover {
+     background-color: #e92217;
+     color: #ffffff;
+ }
+
+.nav-button:active, .jip-button:active {
+    background-color: #f31104;
+    color: #ffffff;
+}
+
+/* second nav */
 .second-nav {
     background: #5C9506;
 }
 
-.uk-navbar-nav>li>a {
-    color: #ffffff;
+.uk-navbar-nav > li > a {
+    color: #f2f2f2;
     text-transform: none;
     font-size: 14px;
     line-height: 20px;
     font-weight: bold;
 }
 
+.uk-navbar-nav > li > a:hover {
+    color: #ffffff;
+}
+
+.uk-navbar-nav > li > a:active {
+    color: black;
+}
+
+/* offcanvas styles */
+.close-btn {
+    color: black !important;
+}
+
+.offcanvas-link a{
+    color: black;
+}
+/* header */
 .header-container {
     background: linear-gradient(90deg, #FEE5D0 5.2%, rgba(255, 255, 255, 0) 100%), url('../imgs/container1.png') no-repeat center;
     background-size: cover;
 }
 
-.primary-title {
-    text-align: center;
-    margin-bottom: 50px;
+.jip-header-container {
+    padding: 74px 70px 100px 70px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.circle-list {
+    height: 100%;
+    padding-left: 53px;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #5B5B5B;
+    background: url('../imgs/Ellipse.svg') no-repeat left top;
+    margin-bottom: 15px;
+}
+
+.jip-heading-primary {
+    font-weight: 900;
+    line-height: 56px;
+    color: #5B5B5B;
+    font-size: 40px;
+}
+
+.form-container {
+    margin-top: 6px;
+}
+
+.jip-form {
+    min-width: 270px;
+}
+
+.jip-input {
+    border: 2px solid green;
+    border-radius: 18px;
+    height: 40px;
+}
+
+/* about us section */
+.jip-about {
+    padding-top: 58px;
+    padding-bottom: 30px;
+}
+
+.about-wrapper {
+    padding: 0 30px;
+}
+
+.jip-heading-secondary {
+    margin-bottom: 48px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #5B5B5B;
+}
+
+.jip-paragraph {
+    font-size: 18px;
+    color: #5B5B5B;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.about-icon {
+    height: 55px;
+}
+
+.about-icon-title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #5C9506;
+}
+
+.about-icon-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #5B5B5B;
+}
+
+.m-l-30 {
+    margin-left: 30px;
+}
+
+/* sections */
+
+.jip-section {
+    background: #FEE5D0;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .text-white {
@@ -50,15 +223,10 @@ h2, p, h3, h1 {
     color: #ffffff;
     border: none;
     border-radius: 18px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     height: 40px;
     text-transform: none;
 }
-
-.jip-button:hover {
-    background: #FF5D38;
-}
-
 
 /* programs */
 .programs {
@@ -105,15 +273,11 @@ h2, p, h3, h1 {
 }
 
 /* feedback */
-.feedback {
-    width: 89%;
-    margin: auto;
-    height: 800px;
+.feedback-container {
     padding: 60px 70px;
 }
 
 .feedback-item {
-    height: 170px;
     border: 2px solid #5C9506;
     border-radius: 9px;
     margin-bottom: 27px;
@@ -136,6 +300,7 @@ h2, p, h3, h1 {
 
 .feedback-text {
     font-size: 14px;
+    margin: 0;
 }
 
 .circle-image {
@@ -200,15 +365,4 @@ footer {
     background: #FF3E33;
     color: #F2F2F2;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container {
-
-}
-
-
-@media only screen and (max-width: 900px) {
-    .form-container {
-        display: none;
-    }
 }
