@@ -6,11 +6,13 @@ body {
     width: 100%;
     box-sizing: border-box;
     background: white url('../imgs/background.png') repeat-y;
+    overflow-x: hidden;
 }
 
 html {
     font-family: 'Gotham Pro', sans-serif;
 }
+
 /* header */
 
 .jip-header {
@@ -208,9 +210,19 @@ html {
 
 .jip-section {
     background: #FEE5D0;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.jip-section-item {
+    min-width: 240px;
+    background: linear-gradient(90deg, #FFF7DC -96.51%, rgba(255, 247, 220, 0) 124.35%);
+
+}
+
+.slider-item-overlay {
+    background: linear-gradient(90deg, #FFF7DC -96.51%, rgba(255, 247, 220, 0) 124.35%);
 }
 
 /* study programs */
@@ -247,8 +259,10 @@ html {
 .feedback-middle {
     background: linear-gradient(90deg, #5C9506 0%, rgba(255, 247, 220, 0) 101.71%), url('../imgs/feedback-middle.png') no-repeat center;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
+}
+
+.feedback-middle-container {
+    padding: 60px 70px 55px 70px;
 }
 /* teachers */
 
@@ -282,7 +296,12 @@ html {
 
 /* feedback */
 .feedback-container {
-    padding: 60px 70px;
+    padding-top: 60px;
+}
+
+.feedback-container .uk-slideshow-items {
+    /*min-height: 100% !important;*/
+    /*height: 100% !important;*/
 }
 
 .feedback-item {
@@ -326,51 +345,21 @@ html {
 
 /* footer styles */
 footer {
-    height: 324px;
-    display: flex;
-    flex-direction: row;
+    max-width: 1280px;
 }
 
 #map {
     width: 25%;
-    height: 100%;
+    height: 324px;
 }
 
 .contacts {
-    width: 35%;
-    padding: 55px 47px;
+
 }
 
-.tour-form {
-    width: 40%;
-    background: #5C9506;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-row-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 13px;
-}
-
-.footer-input {
-    width: 47%;
-    height: 40px;
-    border-radius: 18px;
-    border: 2px solid red;
-    text-align: center;
-}
-
-.footer-form-button {
-    width: 100%;
-    height: 43px;
-    border-radius: 27px;
-    border: none;
-    background: #FF3E33;
-    color: #F2F2F2;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+@media only screen and (max-width: 640px) {
+    .jip-section-slider {
+        max-width: 250px;
+        margin: auto
+    }
 }

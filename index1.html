@@ -197,30 +197,37 @@
         <h2 class="uk-text-center jip-heading-secondary">Секции</h2>
         <div class="uk-margin-auto" style="width: 94%" uk-slider>
             <div class="uk-position-relative">
-                <div class="uk-slider-container">
+                <div class="uk-slider-container jip-section-slider">
                     <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
-                        <li>
-                            <div class="uk-width-medium" style="height: 350px; background: #5C9506; border-radius: 10px">
-                                <p style="color: white; font-size: 14px; padding: 23px; line-height: 21px; fonts">
+                        <li class="jip-section-item">
+                            <div class="" style="height: 350px; background: #5C9506; border-radius: 10px">
+                                <p style="color: white; font-size: 14px; padding: 23px; line-height: 21px;">
                                     Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя
                                     в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел,
                                     стоило ему приподнять голову, свой коричневый, выпуклый, разделенный оторого еле
                                     держалось готовое </p>
                             </div>
                         </li>
-                        <li>
-                            <div style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;"></div>
+                        <li class="jip-section-item">
+                            <div class="uk-cover-container slider-item-overlay" style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;">
+                                <img src="imgs/1.jpeg" alt="" uk-cover>
+                                <div class="uk-overlay"></div>
+                            </div>
 
                         </li>
-                        <li>
-                            <div style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;"></div>
+                        <li class="jip-section-item">
+                            <div class="uk-cover-container" style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;">
+                                <img src="imgs/2.jpeg" alt="" uk-cover>
+                            </div>
 
                         </li>
-                        <li>
-                            <div style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;"></div>
+                        <li class="jip-section-item">
+                            <div class="uk-cover-container" style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;">
+                                <img src="imgs/3.jpeg" alt="" uk-cover>
+                            </div>
 
                         </li>
-                        <li>
+                        <li class="jip-section-item">
                             <div style="height: 350px; background: white; border-radius: 10px ;border: 2px solid #5C9506;  width: 100%;"></div>
 
                         </li>
@@ -238,12 +245,259 @@
     <div id="study-programs" class="uk-container study-programs">
         <h2 class="uk-text-center jip-heading-secondary">Образовательная программа и учебный план</h2>
         <div>
-            <div>
-
+            <div style="padding: 0px 0 63px 0;">
+                <div class="uk-align-left">
+                    dsadasd
+                </div>
+                <div>
+                    <h2>title</h2>
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="uk-container feedback-middle">
+        <div class="uk-flex feedback-middle-container">
+            <div>
+                <h2 class="text-white uk-width-1-1@s uk-width-3-4@m uk-width-3-4@l">Оставьте заявку на нашем сайте прямо сейчас и мы отправим вам на
+                    почту
+                    образовательную программу</h2>
+            </div>
+            <div class="form-container uk-visible@m">
+                <form class="jip-form uk-flex uk-flex-column">
+                    <div>
+                        <input class="uk-width-1-1 uk-padding-small jip-input" placeholder="Введите имя" type="text" />
+                    </div>
+                    <div class="uk-margin-small-top">
+                        <input class="uk-width-1-1 uk-padding-small jip-input" placeholder="Введите номер"
+                               type="text">
+                    </div>
+                    <div class="uk-margin-small-top">
+                        <button class="uk-button jip-button">
+                            Записаться на экскурсию
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container feedback-container uk-background-default" id="feedback">
+        <div style="padding: 0 30px 0 30px">
+            <h2 class="jip-heading-secondary uk-text-center">Отзывы</h2>
+            <div class="uk-container">
+                <div class="uk-position-relative" uk-slideshow>
+
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <div class="uk-container">
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Гульнара Арапбаева</h2>
+                                        <p class="feedback-text">Я, как и все бабушки обожаю свою внучку. Категорически была против детского сада. Молодёжь убедила попробовать некоторое время поводить. Я сама работала зав. д. с. И понимаю как сложно организовать мир , где детям хорошо.
+                                            В этом д.с это удалось идеально. Начиная с парадной, где тебя встречают с улыбкой. Оформление, дидактический материал,и самое главное отлично подобранный персонал! Здесь всё радует глаз!
+                                            Индивидуальный подход к детям в д. с. говорит о профессиональных качествах всех сотрудников.
+                                            Моей внучки 1. 8 м. За месяц она освоила « почтовый ящик «. Напевает песенки и танцует! И самое главное полюбила воспитателей. Спасибо большое.
+                                            Удачи. Процветания!</p>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Канжарбекова Бермет Канжарбековна</h2>
+                                        <p class="feedback-text">We go to the school of jolly eight months of , I mean everything at a higher level, thank you for that! It is always nice, very patient with kids, they got a way with every child, they will always find necessary and soft word without increasing voice, they know how to comfort even the most naughty. Great with kids in kindergarten, they are busy. the lessons of the development of language, math, drawing, music lessons, gym a lot more interesting for the baby and developing.
+                                            Thanks for teachers.  </p>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Венера Сергеевна Ли</h2>
+                                        <p class="feedback-text">Мы очень любим наш сад Джолли! Даже не представляю другой сад! Благодарна очень за всю проделанную работу и качество, предоставляемых услуг. Меня в нашем саду устраивает все. Отдельная благодарность нашему воспитателю Ольге Михайловне. Такую отдачу и любовь детям я еще не встречала и рада, что первый учитель у Дария именно такой. Желаю чтобы все учителя были такими, что могли заинтересовать и найти подход к каждому! В общем, желаю удачи и оставаться на таком же уровне и не сбавлять обороты! </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="margin: 0 10px;">
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Василий Самойлов</h2>
+                                        <p class="feedback-text">Проснувшись однажды утром после беспокойного сна, Грегор
+                                            Замза
+                                            обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                            панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                                            выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле
+                                            держалось готовое вот-вот окончательно сползти </p>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Василий Самойлов</h2>
+                                        <p class="feedback-text">Проснувшись однажды утром после беспокойного сна, Грегор
+                                            Замза
+                                            обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                            панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                                            выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле
+                                            держалось готовое вот-вот окончательно сползти </p>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Василий Самойлов</h2>
+                                        <p class="feedback-text">Проснувшись однажды утром после беспокойного сна, Грегор
+                                            Замза
+                                            обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                            панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                                            выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле
+                                            держалось готовое вот-вот окончательно сползти </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="margin: 0 10px;">
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Василий Самойлов</h2>
+                                        <p class="feedback-text">Проснувшись однажды утром после беспокойного сна, Грегор
+                                            Замза
+                                            обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                            панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                                            выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле
+                                            держалось готовое вот-вот окончательно сползти </p>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Василий Самойлов</h2>
+                                        <p class="feedback-text">Проснувшись однажды утром после беспокойного сна, Грегор
+                                            Замза
+                                            обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                            панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                                            выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле
+                                            держалось готовое вот-вот окончательно сползти </p>
+                                    </div>
+                                </div>
+                                <div class="feedback-item">
+                                    <div class="image-wrapper">
+                                        <div class="circle-image">
+                                            <img src="imgs/avatar3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-content">
+                                        <h2 class="feedback-title">Василий Самойлов</h2>
+                                        <p class="feedback-text">Проснувшись однажды утром после беспокойного сна, Грегор
+                                            Замза
+                                            обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                            панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                                            выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле
+                                            держалось готовое вот-вот окончательно сползти </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left-out uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                       uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                       uk-slideshow-item="next"></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<footer id="contacts" class="uk-padding-remove uk-margin-auto uk-flex">-->
+        <!--<div id="map" class="uk-visible@m"></div>-->
+        <!--<div class="contacts">-->
+            <!--<div>-->
+                <!--<h2>Наш адрес:</h2>-->
+                <!--<p><i class="fas fa-map-marker-alt"></i>г. Бишкек. Ул. Балык Кумара, 36-37</p>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<h2>Контакты:</h2>-->
+                <!--<p><i class="fas fa-phone-square"></i>+9830 21324 334 44</p>-->
+                <!--<p><i class="fas fa-envelope-square"></i>mail2ghweb@gmail.com</p>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<i class="fab fa-facebook-f"></i>-->
+                <!--<i class="fab fa-instagram"></i>-->
+                <!--<i class="fas fa-play-circle"></i>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="tour-form">-->
+            <!--<form action="">-->
+                <!--<div class="form-row-container">-->
+                    <!--<input class="footer-input" placeholder="Введите имя" type="text"/>-->
+                    <!--<input class="footer-input" placeholder="Введите телефон" type="text"/>-->
+                <!--</div>-->
+                <!--<div class="form-row-container">-->
+                    <!--<input class="footer-input" placeholder="Введите e-mail" type="text"/>-->
+                    <!--<input class="footer-input" placeholder="Введите сообщение" type="text"/>-->
+                <!--</div>-->
+                <!--<button type="submit" class="footer-form-button">Записаться на экскурсию</button>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</footer>-->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        let map;
+        let marker;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [42.80827897232248, 74.59624528884889],
+                zoom: 15
+            });
+            marker = DG.marker([42.80827897232248, 74.596444], {
+                draggable: false
+            }).addTo(map);
+        });
+
+
+    </script>
     <!--<script src="js/uikit.min.js"></script>-->
     <!--<script src="js/uikit-icons.min.js"></script>-->
 
